@@ -1,13 +1,36 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-    <script src="/Script/app.js"></script>
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Hell</p>
-  </body>
-</html>
+<%- include('partials/header.ejs') %>
+
+<article>
+    <h2>Have Something to Say? Fill Out the Form Below!</h2>
+    <div id="formBox">
+        <form action="mailto:marcus.pasco25@gmail.com?subject=Feedback"
+        method="post" enctype="text/plain" name="feedback_form">
+        <p>
+            <!--Section for recipient's name-->
+            <label for="Name">Your Name (Required)</label><br>
+            <input type="text" id="Name" size="32" placeholder="Enter your name here" required>
+        </p>
+        <p>
+            <!--Section for recipient's email-->
+            <label for="Email">Your Email (Required): </label><br>
+            <input type="email" id="Email" size="32" placeholder="Enter your email here" required>
+        </p>
+        <p>
+            <!--Section for recipient's Cell no.-->
+            <label for="Number">Phone Number (Optional): </label><br>
+            <input type="tel" id="Number" size="32" placeholder="Enter your phone number here">
+        </p>
+        <p>
+            <!--Section for recipient's comments-->
+            <label for="Comment">Your Comment:</label><br>
+            <!--An id and name for Comment are both needed unless an error will show-->
+            <textarea id="Comment" name="Comment" placeholder="Enter your comment here"></textarea>
+        </p>
+        <div id="formButton">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+</article>
+
+<%- include('partials/footer.ejs') %>

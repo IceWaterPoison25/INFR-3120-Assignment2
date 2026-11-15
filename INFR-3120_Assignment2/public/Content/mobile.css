@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+    /*width 100% + padding #px makes weird looking pages*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B3161;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header {
+    background-color: #27468a;
+    color: white;
+    height: 150px;
+    width: 100%;
+    margin: 0px;
+    padding: 40px;
+    float: none;
+}
+
+a {
+    color: white;
+}
+
+article {
+    background-color: #3d6fdb;
+    color: white;
+    width: 100%;
+    margin: 0px;
+    padding: 40px;
+}
+
+#homePageImg img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#aboutMeImg img{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+video {
+    width: 300px;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, p{
+    margin: 10px;
+}
+
+footer {
+    background-color: #27468a;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    padding: 30px;
+    float: none;
+    text-align: center;
+}
+
+#formBox {
+    background: linear-gradient(to bottom, #1B3161 0%, #3d6fdb 100%);
+    border: 5px solid #1B3161;
+    width: 80%;
+    margin: 0 auto;
+}
+#formButton {
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#formBox p {
+    margin: 10px;
+}
+#formBox input{
+    width: 100%;
+}
+#formBox textarea{
+    width: 100%;
+}
+
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box {
+    background: linear-gradient(45deg, #4881ff 0%, #27468a 100%);
+    border: 5px solid #1B3161;
+    width: 250px;
+    float: left;
+    margin: 5px 0 5px;
+}
+.box img {
+    width: 150px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.box:hover {
+    transform: scale(1.1);
+}
+
+.custom-navbar {
+    background-color: #27468A;
+}
+
+.custom-navbar .navbar-brand, .custom-navbar .nav-link {
+    color: #ffffff;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #4881FF;
+}

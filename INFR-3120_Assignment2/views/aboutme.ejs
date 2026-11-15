@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-    <script src="/Script/app.js"></script>
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Hell</p>
-  </body>
-</html>
+<%- include('partials/header.ejs') %>
+
+ <article>
+    <h2>Hello!</h2>
+    <p>My name is Marcus Pasco, I am a university student studying at Ontario Tech</p>
+    <div id="aboutMeImg"><img src="/Media/AboutMePic.jpg" alt="Marcus Pasco"></div>
+    <p>My program is Networking and IT Security and currently 2nd year (as of 2026/10/07)</p>
+    <video id="video" controls preload="auto" poster="/Media/AboutMeCover.jpg">
+        <!-- Two spereate lines providing source allows web browser to use the format that applies best-->
+        <source src="Media/AboutMeVideo.MOV" type="video/mp4"> <!--mp4 applies to windows-->
+        <source src="Media/AboutMeVideo.MOV" type="video/ogg"> <!--ogg applies to mac/linux-->
+    </video>
+</article>
+
+<%- include('partials/footer.ejs') %>

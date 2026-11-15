@@ -1,13 +1,31 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/Content/app.css' />
-    <script src="/Script/app.js"></script>
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-    <p>Hell</p>
-  </body>
-</html>
+<%- include('partials/header.ejs') %>
+
+<article>
+  <h2>My Projects</h2>
+  <p>These are some of the projects I have done over my academic career</p>
+  <div class="box">
+      <img src="/Media/Project1.PNG" alt="Packet Tracer Topology">
+      <h3>Networking 2 Final Project</h3>
+      <p>Using Packet Tracer we were given a topology and to configure to how the assignment demands. 
+          In this case, simulates real-world long distance connections.</p>
+  </div>
+  <div class="box">
+      <img src="/Media/Project2.PNG" alt="Visual Studio Code Console">
+      <h3>Object Oriented Programming Final Project</h3>
+      <p>Using Python, me and my group designed a rudimentary government filing cabinet application that is similar to real ones.
+          It includes adding people based on citizenship and other personal information.</p>
+  </div>
+  <div class="box">
+      <img src="/Media/Project3.PNG" alt="An Essay Title Page">
+      <h3>Writing and Critical Thinking Essay</h3>
+      <p>An essay talking about influencer marketing in Canada. It includes evidence based on academic research from our database.</p>
+  </div>
+  <div class="box">
+      <img src="/Media/Project4.PNG" alt="A Slideshow Presentation">
+      <h3>Collaborative Leadership Group Video</h3>
+      <p>Using editing software, me and my group filmed a video regarding terrible leadership practices. In this case, it 
+          was on Elizabeth Holmes, former CEO of Theranos</p>
+  </div>
+</article>
+
+<%- include('partials/footer.ejs') %>

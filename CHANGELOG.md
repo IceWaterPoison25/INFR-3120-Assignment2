@@ -1,4 +1,12 @@
 # Project 1 Changelog
+## v0.3.0
+### Added
+- Media folder in public introduced and all files imported from assignment 1
+- All css files imported from assignment 1
+
+### Improvements
+- Added a shared header and footer ejs file underneath /views/partials
+- Every page ejs file has their contents imported from assignment 1
 
 ## v0.2.0
 ### Added

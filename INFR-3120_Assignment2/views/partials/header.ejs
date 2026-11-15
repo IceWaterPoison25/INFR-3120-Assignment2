@@ -3,9 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title><%= title %></title>
+  <script src="/Script/app.js"></script>
+
+  <!-- Links for Nav component-->
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Link for icons -->
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+
+  <!-- Links for stylesheets for monitor size -->
+  <link href="/Content/laptop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:961px)">
+  <link href="/Content/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+  <link href="/Content/mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
 </head>
 <body>
   <header>
-    <nav><a href="/">Home</a> | <a href="/about">About</a></nav>
+    <!-- Nav bar by bootstrap -->
+     <!-- Line 24 is Code provided by Chat-GPT see README.md [1] for more -->
+      <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- Code Sections for all site pages -->
+              <li class="nav-item">
+                <% if(title=="Home Page") {%>
+                  <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-house fa-xl"></i> Home Page</a>
+                <% } else { %>
+                  <a class="nav-link" aria-current="page" href="/home"><i class="fa-solid fa-house"></i> Home Page</a>
+                <% } %>
+              </li>
+              <li class="nav-item">
+                <% if(title=="Contact Me Page") {%>
+                  <a class="nav-link active" aria-current="page" href="/contactme"><i class="fa-solid fa-phone fa-xl"></i> Contact Me</a>
+                <% } else { %>
+                  <a class="nav-link" aria-current="page" href="/contactme"><i class="fa-solid fa-phone"></i> Contact Me</a>
+                <% } %>
+              </li>
+              <li class="nav-item">
+                <% if(title=="Projects Page") {%>
+                  <a class="nav-link active" aria-current="page" href="/projects"><i class="fa-solid fa-diagram-project fa-xl"></i> Projects</a>
+                <% } else { %>
+                  <a class="nav-link" aria-current="page" href="/projects"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                <% } %>
+              </li>
+              <li class="nav-item">
+                <% if(title=="About Me Page") {%>
+                  <a class="nav-link active" aria-current="page" href="/aboutme"><i class="fa-solid fa-user fa-xl"></i> About Me</a>
+                <% } else { %>
+                  <a class="nav-link" aria-current="page" href="/aboutme"><i class="fa-solid fa-user"></i> About Me</a>
+                <% } %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>
   <main>
