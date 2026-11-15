@@ -2,7 +2,7 @@
 
 (function(){
     function Start(){
-        console.log("App started...")
+        console.log("App Started...")
     }
     window.addEventListener("load", Start)
 })();
