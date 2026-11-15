@@ -1,5 +1,13 @@
 # Project 1 Changelog
 
+## v0.2.0
+### Added
+- Introduced fontawesome icons on the nav bar
+
+### Improvements
+- Site is finished up to Lecture 7 video
+
+
 ## v0.1.0
 ### Added
 - Introduced Navigation bar and installed all dependencies
