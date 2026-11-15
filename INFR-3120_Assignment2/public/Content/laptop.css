@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+    /*width 100% + padding #px makes weird looking pages*/
     box-sizing: border-box;
 }
 
@@ -61,7 +62,7 @@ h1, h2, h3, h4, p{
 footer {
     background-color: #27468a;
     color: white;
-    height: 100px;
+    height: 150px;
     width: 100%;
     margin: 0px;
     padding: 30px;
@@ -117,7 +118,7 @@ article::after {
 
 /*Lines 119 to 135 are Code provided by Chat-GPT see README.md [1] for more*/
 .custom-navbar {
-    background-color: #27468A;
+    background-color: #3d6fdb;
 }
 
 .custom-navbar .navbar-brand, .custom-navbar .nav-link {
@@ -132,4 +133,9 @@ article::after {
     color: #ffffff;
     font-weight: bold;
     font-size: large;
+}
+
+/*Lines 138 to 140 are Code provided by Chat-GPT see README.md [2] for more*/
+.social-links{
+    text-decoration: none;
 }

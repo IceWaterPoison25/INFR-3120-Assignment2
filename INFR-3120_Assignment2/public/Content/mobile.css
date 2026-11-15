@@ -61,7 +61,7 @@ h1, h2, h3, h4, p{
 footer {
     background-color: #27468a;
     color: white;
-    height: 100px;
+    height: 150px;
     width: 100%;
     margin: 0px;
     padding: 30px;
@@ -114,7 +114,7 @@ article::after {
 }
 
 .custom-navbar {
-    background-color: #27468A;
+    background-color: #3d6fdb;
 }
 
 .custom-navbar .navbar-brand, .custom-navbar .nav-link {
@@ -123,4 +123,14 @@ article::after {
 
 .custom-navbar .nav-link:hover {
     color: #4881FF;
+}
+
+.custom-navbar .nav-link.active {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+}
+
+.social-links{
+    text-decoration: none;
 }

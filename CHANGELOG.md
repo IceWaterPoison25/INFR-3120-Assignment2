@@ -1,4 +1,11 @@
 # Project 1 Changelog
+## v0.4.0
+### Added
+- Icons for LinkedIN and Github addresses added in footer
+
+### Improvemetns
+- css files increased size due to added icons
+
 ## v0.3.0
 ### Added
 - Media folder in public introduced and all files imported from assignment 1
